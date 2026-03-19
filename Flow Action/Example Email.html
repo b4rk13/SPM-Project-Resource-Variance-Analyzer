@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Health Alert</title>
+</head>
+<body style="margin: 0; padding: 20px; background-color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif;">
+
+    <div style="margin-bottom: 20px; color: #333; line-height: 1.5;">
+        This analysis was performed using a <b>4 week</b> lookback period and a <b>20%</b> variance tolerance.<br>
+        For a detailed explanation of the methodology and trend logic, please refer to the <a href='https://adtprod.service-now.com/esc?id=kb_article&sysparm_article=KB0011803' style='color: #0061AA; text-decoration: none; font-weight: bold;'>Resource Analyzer Utility Article</a>.
+    </div>
+
+    <div style="max-width: 800px; margin: 0 auto; background-color: #F5F6F7; border: 1px solid #d1dbe5; border-radius: 6px; padding: 15px; margin-bottom: 25px;">
+        <h3 style="margin: 0 0 10px 0; color: #1d2d3d; font-size: 16px;">Portfolio Resource Health Summary</h3>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr>
+                <td style="width: 33%; border-right: 1px solid #d1dbe5; text-align: center;">
+                    <span style="display: block; font-size: 24px; font-weight: bold; color: #1d2d3d;">2</span>
+                    <span style="font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Projects Analyzed</span>
+                </td>
+                <td style="width: 33%; border-right: 1px solid #d1dbe5; text-align: center;">
+                    <span style="display: block; font-size: 24px; font-weight: bold; color: #B22222;">2</span>
+                    <span style="font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Under-Allocated Trends</span>
+                </td>
+                <td style="width: 34%; text-align: center;">
+                    <span style="display: block; font-size: 24px; font-weight: bold; color: #0275d8;">1</span>
+                    <span style="font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 1px;">Over-Allocated Trends</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="max-width: 800px; margin: 0 auto; border: 1px solid #dee2e6; border-radius: 6px; padding: 20px; margin-bottom: 30px; background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+        <h2 style="color: #1d2d3d; margin: 0 0 5px 0; font-size: 18px;">PRJ0010091: Managed Security Operations (OpEx)</h2>
+        <p style="color: #6c757d; margin: 0 0 20px 0; font-size: 13px;"><b>Project Manager:</b> Binish Babu</p>
+        
+        <table style="width: 100%; border-collapse: collapse; font-size: 13px; color: #333;">
+            <thead>
+                <tr style="background-color: #f8f9fa; border-bottom: 2px solid #dee2e6; text-align: left;">
+                    <th style="padding: 12px 10px;">Task</th>
+                    <th style="padding: 12px 10px;">Resource</th>
+                    <th style="padding: 12px 10px;">Status</th>
+                    <th style="padding: 12px 10px; text-align: right;">Planned (h)</th>
+                    <th style="padding: 12px 10px; text-align: right;">Actual (h)</th>
+                    <th style="padding: 12px 10px; text-align: right;">Var %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td style="padding: 12px 10px;">
+                        <b>PRJTASK0012471</b><br/>
+                        <span style="color:#777; font-size: 11px;">Phase 1: Implementation</span>
+                    </td>
+                    <td style="padding: 12px 10px;">John Doe</td>
+                    <td style="padding: 12px 10px; color: #B22222; font-weight: bold;">Persistent Under-allocation</td>
+                    <td style="padding: 12px 10px; text-align: right;">160.0</td>
+                    <td style="padding: 12px 10px; text-align: right;">212.5</td>
+                    <td style="padding: 12px 10px; text-align: right; font-weight: bold;">+32.8%</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td style="padding: 12px 10px;">
+                        <b>PRJTASK0012471</b><br/>
+                        <span style="color:#777; font-size: 11px;">Phase 1: Implementation</span>
+                    </td>
+                    <td style="padding: 12px 10px;">Jane Smith</td>
+                    <td style="padding: 12px 10px; color: #0275d8; font-weight: bold;">Persistent Over-allocation</td>
+                    <td style="padding: 12px 10px; text-align: right;">80.0</td>
+                    <td style="padding: 12px 10px; text-align: right;">15.0</td>
+                    <td style="padding: 12px 10px; text-align: right; font-weight: bold;">-81.2%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top: 25px; text-align: right;">
+            <a href="https://yourinstance.service-now.com/now/spm/resource-management-workspace/project/174146ff47534a9c67a6da7b416d43a7" 
+               style="background-color: #0061AA; color: #ffffff; padding: 12px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 13px; display: inline-block;">
+                Adjust Resources in Workspace &rarr;
+            </a>
+        </div>
+    </div>
+
+    <div style="max-width: 800px; margin: 0 auto; border: 1px solid #dee2e6; border-radius: 6px; padding: 20px; margin-bottom: 30px; background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+        <h2 style="color: #1d2d3d; margin: 0 0 5px 0; font-size: 18px;">PRJ0010552: Cloud Infrastructure Migration</h2>
+        <p style="color: #6c757d; margin: 0 0 20px 0; font-size: 13px;"><b>Project Manager:</b> Binish Babu</p>
+        
+        <table style="width: 100%; border-collapse: collapse; font-size: 13px; color: #333;">
+            <thead>
+                <tr style="background-color: #f8f9fa; border-bottom: 2px solid #dee2e6; text-align: left;">
+                    <th style="padding: 12px 10px;">Task</th>
+                    <th style="padding: 12px 10px;">Resource</th>
+                    <th style="padding: 12px 10px;">Status</th>
+                    <th style="padding: 12px 10px; text-align: right;">Planned (h)</th>
+                    <th style="padding: 12px 10px; text-align: right;">Actual (h)</th>
+                    <th style="padding: 12px 10px; text-align: right;">Var %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border-bottom: 1px solid #eee;">
+                    <td style="padding: 12px 10px;">
+                        <b>PRJTASK0022001</b><br/>
+                        <span style="color:#777; font-size: 11px;">Database Migration</span>
+                    </td>
+                    <td style="padding: 12px 10px;">Mike Ross</td>
+                    <td style="padding: 12px 10px; color: #B22222; font-weight: bold;">Persistent Under-allocation</td>
+                    <td style="padding: 12px 10px; text-align: right;">40.0</td>
+                    <td style="padding: 12px 10px; text-align: right;">95.0</td>
+                    <td style="padding: 12px 10px; text-align: right; font-weight: bold;">+137.5%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="margin-top: 25px; text-align: right;">
+            <a href="#" style="background-color: #0061AA; color: #ffffff; padding: 12px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 13px; display: inline-block;">
+                Adjust Resources in Workspace &rarr;
+            </a>
+        </div>
+    </div>
+
+    <p style="text-align: center; color: #999; font-size: 14px; margin-top: 40px;">
+        Report generated on 2026-03-03.
+    </p>
+
+</body>
+</html>
